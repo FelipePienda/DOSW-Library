@@ -1,6 +1,6 @@
 package edu.eci.tdd.service;
 
-import edu.eci.dosw.tdd.model.User;
+import edu.eci.tdd.model.User;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +14,13 @@ public class UserService {
     }
 
     public List<User> getAllUsers() {
-        return users;
+        return users;  
+    }
+
+    public User getUserById(String userId) {
+        return users.stream()
+                .filter(user -> user.getId().equals(userId))
+                .findFirst()
+                .orElse(null);
     }
 }

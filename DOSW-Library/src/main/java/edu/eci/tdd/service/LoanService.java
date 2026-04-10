@@ -1,7 +1,7 @@
 package edu.eci.tdd.service;
 
-import edu.eci.dosw.tdd.exception.BookNotAvailableException;
-import edu.eci.dosw.tdd.model.Loan;
+import edu.eci.tdd.exception.BookNotAvailableException;
+import edu.eci.tdd.model.Loan;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;

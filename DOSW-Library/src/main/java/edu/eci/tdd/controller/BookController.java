@@ -1,7 +1,7 @@
 package edu.eci.tdd.controller;
 
-import edu.eci.dosw.tdd.model.Book;
-import edu.eci.dosw.tdd.service.BookService;
+import edu.eci.tdd.model.Book;
+import edu.eci.tdd.service.BookService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
